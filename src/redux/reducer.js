@@ -1,7 +1,7 @@
 import {ADD_ITEM, REMOVE_ITEM, EDIT_ITEM_NAME, EDIT_ITEM_VALUE, REGISTER, LOGOUT, LOGIN} from "./actions";
 
 const itemsReducerInitialState = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-const usersReducerInitialState = {loggedIn: true};
+const usersReducerInitialState = {loggedIn: false};
 
 const itemsStorageName = 'items';
 const userStorageName = 'user';
